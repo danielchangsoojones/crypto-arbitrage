@@ -8,11 +8,15 @@ import matplotlib.pyplot as plt
 #import term
 
 
+
+time = 720 #number of times to record the rates (right now 12 hours)
+loop = 60 #number of seconds per loop (1 min right now)
+
 lines = []
 bt = []
 cb = []
 c = 0
-for n in range(10):
+for n in range(time):
     #This is the main loop for the program that determines the number of times it is run
     
     
@@ -40,7 +44,7 @@ for n in range(10):
     print('minutes:', c)
     print('CB', price_coinbase)
     print('BT', price_bittrex)
-    time.sleep(1) #Duration between calculation loops
+    time.sleep(loop) #Duration between calculation loops
     c += 1
     
 
