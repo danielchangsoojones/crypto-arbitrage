@@ -7,7 +7,7 @@ import gdax
 #import term
 
 
-#STARTING HOLDINGS TO SIMULATE
+#STARTING HOLDINGS TO SIMULATE 
 holdings = {'ETH': 1}
 confirming = []
 graph = []
