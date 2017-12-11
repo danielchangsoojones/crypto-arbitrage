@@ -47,7 +47,8 @@ for n in range(1000):
     
     #BITTREX
     my_bittrex = Bittrex(None, None)  # or defaulting to v1.1 as Bittrex(None, None)
-    history = my_bittrex.get_market_history('ETH-LTC')
+    #using count 50 for the trades because the getMarketHistory requires a count number for the parameter. It doesn't really effect anything. 
+    history = my_bittrex.get_market_history('ETH-LTC', 50)
     sum = 0
     count = 0
     #print(history['result'][0]['TimeStamp'])
