@@ -41,7 +41,7 @@ def updateConf():
         counter += 1    
     
 c = 0
-for n in range(1000):
+for n in range(500):
     #This is the main loop for the program that determines the number of times it is run
     
     
@@ -96,4 +96,3 @@ for n in range(1000):
     
 
 
-    
