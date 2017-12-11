@@ -9,20 +9,33 @@ import matplotlib.pyplot as plt
 
 
 
+<<<<<<< HEAD
+timex = 720 #number of times to record the rates (right now 12 hours)
+=======
 t = 720 #number of times to record the rates (right now 12 hours)
+>>>>>>> 4e6efed44df8d29636638d7404253a97ff62483d
 loop = 60 #number of seconds per loop (1 min right now)
 
 lines = []
 bt = []
 cb = []
 c = 0
+<<<<<<< HEAD
+for n in range(timex):
+=======
 for n in range(t):
+>>>>>>> 4e6efed44df8d29636638d7404253a97ff62483d
     #This is the main loop for the program that determines the number of times it is run
     
     
     #BITTREX
     my_bittrex = Bittrex(None, None)  # or defaulting to v1.1 as Bittrex(None, None)
+<<<<<<< HEAD
+    #using count 50 for the trades because the getMarketHistory requires a count number for the parameter. It doesn't really effect anything. 
+    history = my_bittrex.get_market_history('ETH-LTC', 50)
+=======
     history = my_bittrex.get_market_history('ETH-LTC', 5)
+>>>>>>> 4e6efed44df8d29636638d7404253a97ff62483d
     sum = 0
     count = 0
     #print(history['result'][0]['TimeStamp'])
